@@ -48,9 +48,17 @@ In the Server Manager, I went to Tools > Active Directory Users and Computers > 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/7MVVLIZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-To join my main server with the domain controller, obtained the private IP address from my domain controller. Within the Networking section for my main server on Azure Portal, I set its DNS Server to that of the private IP from the domain controller. Following this, I right clicked the Start button on the main server > System > Rename this PC (Advanced).
+To join my main server with the domain controller via 'mydomain.com', I obtained the private IP address from my domain controller. Within the Networking section for my main server on Azure Portal, I set its DNS Server to that of the private IP from the domain controller. Following this, I right clicked the Start button on the main server > System > Rename this PC (Advanced).
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/tt0pLDH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Using Powershell ISE, I discovered a template that generates random users that will be able to log in to the domain controller as a credentialed user.
 </p>
 <br />
